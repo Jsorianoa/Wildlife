@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Base } from './Base';
-import './index.css';
+import  JournalApp  from './JournalApp';
+import './styles/styles.scss' ;
+
 
 
 ReactDOM.render(
   
-    <Base />,
+    <JournalApp/>,
   
+
+    
   document.getElementById('root')
 );
 
