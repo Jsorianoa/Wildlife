@@ -8,7 +8,6 @@ function JournalApp(){
         <div className='JournalApp'>
             <h1>JournalApp</h1>
             
-            <Button>boton</Button>
 
             <nav class="navbar 
             navbar-expand-sm 
@@ -36,8 +35,6 @@ function JournalApp(){
             </nav>
             
             
-
-
             
 
         </div>
