@@ -1,105 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./Header.js";
+import Footer from "./Footer"
 
-import { Button, Alert } from "react-bootstrap";
-import Caballo from "./img/caballo.png";
+
 
 function JournalApp() {
   return (
     <div>
-     
+      <Header/>
+      <div class="container">    
 
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">
-          Nombre de la empresa
-        </a>
-
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapsibleNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
-
-          <ul class="navbar-nav">
-
-
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Inicio
-              </a>
-            </li>
-
-
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Nosotros
-              </a>
-            </li>
-
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Contacto
-              </a>
-            </li>
-
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                ¿Cómo ayudar?
-              </a>
-            </li>
-
-            
-          </ul>
-        </div>
-      </nav>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <h2>About Me</h2>
-            <h5>Photo of me:</h5>
-            <div class="fakeimg">Fake Image</div>
-            <p>
-              Some text about me in culpa qui officia deserunt mollit anim..
-            </p>
-            <h3>Some Links</h3>
-            <p>Lorem ipsum dolor sit ame.</p>
-            <ul class="nav nav-pills flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Active
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Link
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Link
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">
-                  Disabled
-                </a>
-              </li>
-            </ul>
-            <hr class="d-sm-none"></hr>
-          </div>
-
-          <div class="col-sm-8">
+          <div>
             <h2>TITLE HEADING</h2>
             <h5>Title description, Dec 7, 2017</h5>
             <div class="fakeimg">Fake Image</div>
@@ -122,13 +34,11 @@ function JournalApp() {
               nostrud exercitation ullamco.
             </p>
           </div>
-        </div>
-      </div>
-
-      <div class="jumbotron text-center">
-        <p>Footer</p>
         
       </div>
+      
+      <Footer/>
+      
     </div>
   );
 }
