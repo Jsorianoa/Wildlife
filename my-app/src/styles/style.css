@@ -20,7 +20,7 @@ body {
   height: 100vh;
 }
 
-/*Header*/
+/Header/
 
 .header {
   background-color: gray;
@@ -187,7 +187,7 @@ a:hover {
   transition-delay: 0s;
 }
 
-/*Titulo*/
+/Titulo/
 .content-header h1 {
   text-align: center;
   margin-top: 6rem;
@@ -196,13 +196,13 @@ a:hover {
   color: #ffffff;
   -webkit-text-stroke: 1px rgb(14, 23, 43);
 }
-/*Fin Titulo*/
+/Fin Titulo/
 
 /* seccion para los links del navbar */
 
-/*Finaliza Header*/
+/Finaliza Header/
 
-/*descripcion de Footer P*/
+/descripcion de Footer P/
 
 .jumbotron {
   padding: 3rem;
