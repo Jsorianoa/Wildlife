@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import  JournalApp  from './JournalApp';
-import './styles/style.css' ;
+import JournalApp from './JournalApp';
+import './styles/style.css';
 
 
 
 ReactDOM.render(
-    <JournalApp/>,
+  <JournalApp />,
   document.getElementById('root')
 );
 
