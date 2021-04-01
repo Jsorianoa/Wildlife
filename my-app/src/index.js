@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import  JournalApp  from './JournalApp';
 import './styles/style.css' ;
+import './styles/hambugers.css';
 
 
 

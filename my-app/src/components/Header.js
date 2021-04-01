@@ -1,13 +1,20 @@
 import React from "react";
 import Wildlife from "../img/Wildlife.png";
+import ReactDOM from 'react-dom';
 
 function Header() {
+
     return (
         <header class="header inicio">
             <div class="barra">
+
+                <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
                 <a href="/" ><img src={Wildlife} alt="Wildlife" /></a>
-
-
 
                 <ul class="menu" data-animation="diagonal">
                     <li>
@@ -19,7 +26,6 @@ function Header() {
                             <span class="border border-left"></span>
                         </a>
                     </li>
-
 
                     <li>
                         <a href="#0">
@@ -40,6 +46,9 @@ function Header() {
                         </a>
                     </li>
                 </ul>
+
+
+
             </div>
 
 

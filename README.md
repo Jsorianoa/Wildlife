@@ -7,3 +7,7 @@ se agrega 'npm install --save reactstrap react react-dom'
 se agrega 'npm install node-sass'
 se agrega 'npm install --save react-bootstrap-validation'
 npm start
+
+
+#para las fuentes
+`https://fontawesome.com/icons?d=gallery&p=2`
