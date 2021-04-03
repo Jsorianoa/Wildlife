@@ -12,13 +12,16 @@ const StyledHamburger = styled.div`
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;
+        
+        
 
         div{
             width: 2rem;
             height: 0.25rem;
-            background-color: ${props => (props.open ? '#ccc':'#333')};
+            background-color: ${props => (props.open ? '#aaa':'#000')};
             border-radius: 10px;
             transition: all 0.3s linear;
+            
 
             &:nth-child(1){
                 transform: ${props => (props.open ? 'translateX(10rem)':'translateX(0)')};
