@@ -1,64 +1,23 @@
-import React from "react";
-import Wildlife from "../img/Wildlife.png";
-import ReactDOM from 'react-dom';
+import React, {useState} from "react";
+import NavBar from "./NavBar";
+import Hamburger from "./hamburger.js";
 
 function Header() {
+    const [open, setOpen] = useState(false)
 
+    const handleClick = () => {
+        setOpen(!open)
+    }
     return (
         <header class="header inicio">
-            <div class="barra">
-
-                <button class="hamburger hamburger--collapse" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-
-                <a href="/" ><img src={Wildlife} alt="Wildlife" /></a>
-
-                <ul class="menu" data-animation="diagonal">
-                    <li>
-                        <a href="#0">
-                            Noticias
-                            <span class="border border-top"></span>
-                            <span class="border border-right"></span>
-                            <span class="border border-bottom"></span>
-                            <span class="border border-left"></span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#0">
-                            Nosotros
-                            <span class="border border-top"></span>
-                            <span class="border border-right"></span>
-                            <span class="border border-bottom"></span>
-                            <span class="border border-left"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#0">
-                            Contacto
-                            <span class="border border-top"></span>
-                            <span class="border border-right"></span>
-                            <span class="border border-bottom"></span>
-                            <span class="border border-left"></span>
-                        </a>
-                    </li>
-                </ul>
-
-
-
-            </div>
-
-
+            
+            <NavBar open={open}/>
             <div class="content-header" >
                 <h1>
-                    Wildlife Management Mexico
+                    Wildlife Management México
                 </h1>
-
             </div>
-
+            <Hamburger open={open} handleClick={handleClick}/>
         </header>
     )
 }

@@ -16,58 +16,39 @@ html {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font: 22px sans-serif;
-
   height: 100vh;
 }
 
 /*Header*/
+    
 
 .header {
-  background-color: gray;
+  background-color: white;
   padding: 1rem 0 3rem 0;
 }
 .inicio {
-  background-image: url("https://wallpaperaccess.com/full/852373.jpg");
+  
   min-height: 60rem;
   background-position: center center;
   background-size: cover;
 }
-div.barra {
+/* div.barra {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+ */
 /*barra amburguesa*/
 
 
-
-
-
-
-
-
-@media (max-width: 600px) {
-  div.barra {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  ul.menu {
-    display: flex;
-    flex-direction: column;
-  }
-}
 /*crear una funcion  para JS en esa funsion para clicar 
 en el boton hamburques y despliegue los links,
  buscar onclick (html), buscar document (querySelecto o document.getElementById)
 */
 
 img {
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 8rem;
   padding-left: 1rem;
   cursor: pointer;
 }
@@ -107,12 +88,13 @@ a:hover {
 
 .menu li {
   margin-right: 2rem;
+  
 }
 
 .menu a {
   position: relative;
   display: block;
-  padding: 0.5rem;
+  padding: .8rem 2rem;
 }
 
 .menu .border {
@@ -200,10 +182,15 @@ a:hover {
 .content-header h1 {
   text-align: center;
   margin-top: 6rem;
-
+  font-size: 5rem;
   font-weight: 700;
   color: #ffffff;
   -webkit-text-stroke: 1px rgb(14, 23, 43);
+}
+@media (max-width: 768px){
+  .content-header h1 {
+    font-size: 2rem;
+  }
 }
 /*Fin Titulo*/
 
@@ -246,7 +233,7 @@ div#footerIcons {
   font-size: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   div#footerIcons {
     width: 100%;
     align-items: center;
