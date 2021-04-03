@@ -23,15 +23,24 @@ body {
     
 
 .header {
-  background-color: white;
+  background-image: url('https://www.institutoerudite.org/wp-content/uploads/2018/02/especialista-de-aula-de-naturaleza-720x388.jpg');
   padding: 1rem 0 3rem 0;
-}
-.inicio {
-  
   min-height: 60rem;
   background-position: center center;
   background-size: cover;
 }
+
+@media (max-width: 768px){
+  .header {
+    background-image: url('https://images5.alphacoders.com/955/955059.jpg');
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+  }
+
+}
+
+
 /* div.barra {
   display: flex;
   justify-content: space-between;
@@ -179,19 +188,7 @@ a:hover {
 }
 
 /*Titulo*/
-.content-header h1 {
-  text-align: center;
-  margin-top: 6rem;
-  font-size: 5rem;
-  font-weight: 700;
-  color: #ffffff;
-  -webkit-text-stroke: 1px rgb(14, 23, 43);
-}
-@media (max-width: 768px){
-  .content-header h1 {
-    font-size: 2rem;
-  }
-}
+
 /*Fin Titulo*/
 
 /* seccion para los links del navbar */
