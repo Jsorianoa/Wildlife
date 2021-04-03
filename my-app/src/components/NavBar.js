@@ -19,8 +19,8 @@ const Nav = styled.nav`
         width: 100%; 
         display: flex;
         flex-direction: column;
-        transform: ${props => (props.open ? "translateX(100%);" : "translateX(0)")};
-        opacity: ${props => (props.open ? 0 : 1)};
+        transform: ${props => (props.open ? "translateX(0);" : "translateX(-100%)")};
+        opacity: ${props => (props.open ? 1 : 0)};
         transition: all 0.3s linear;
     }
     li{

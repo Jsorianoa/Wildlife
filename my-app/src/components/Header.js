@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import NavBar from "./NavBar";
 import Hamburger from "./hamburger.js";
+import Title from './Title';
 
 function Header() {
     const [open, setOpen] = useState(false)
@@ -9,15 +10,12 @@ function Header() {
         setOpen(!open)
     }
     return (
-        <header class="header inicio">
+        <header className="header">
             
             <NavBar open={open}/>
-            <div class="content-header" >
-                <h1>
-                    Wildlife Management México
-                </h1>
-            </div>
+            <Title open={open}/>
             <Hamburger open={open} handleClick={handleClick}/>
+
         </header>
     )
 }
