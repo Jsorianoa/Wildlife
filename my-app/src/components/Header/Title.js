@@ -13,7 +13,7 @@ const Ti = styled.div`
   @media (max-width: 768px){
     h1 {
       font-size: 2rem;
-      margin-top: ${props => (props.open ? '4rem' : '-5rem' )};
+      margin-top: ${props => (props.open ? '3rem' : '-7rem' )};
       transition: all 0.3s linear;
     }
   }

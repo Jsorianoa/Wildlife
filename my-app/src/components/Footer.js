@@ -7,10 +7,10 @@ function Footer() {
         <div className="jumbotron" id="footerEdit">
 
         <div id="footerIcons">
-            <i class="fab fa-facebook" ></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fas fa-envelope"></i>
-            <i class="fab fa-instagram"></i>
+            <a href="https://www.facebook.com/wildlifemanagementmx"><i class="fab fa-facebook" ></i></a>
+            <a href="/"><i class="fab fa-twitter"></i></a>
+            <a href="/"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/wildlifemanagementmx/?hl=es-la"><i class="fab fa-instagram"></i></a>
         </div>
 
         <div id="footterCopyright">

@@ -25,35 +25,24 @@ body {
 .header {
   background-image: url('https://www.institutoerudite.org/wp-content/uploads/2018/02/especialista-de-aula-de-naturaleza-720x388.jpg');
   padding: 1rem 0 3rem 0;
-  min-height: 60rem;
+  min-height: 61rem;
   background-position: center center;
   background-size: cover;
+  
+
 }
 
 @media (max-width: 768px){
   .header {
-    background-image: url('https://images5.alphacoders.com/955/955059.jpg');
-    height: 100vh;
-    background-position: center center;
+    background-color: #1c3816;
+    min-height: 15rem;
     background-size: cover;
+    background-repeat: no-repeat;
   }
 
 }
 
 
-/* div.barra {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
- */
-/*barra amburguesa*/
-
-
-/*crear una funcion  para JS en esa funsion para clicar 
-en el boton hamburques y despliegue los links,
- buscar onclick (html), buscar document (querySelecto o document.getElementById)
-*/
 
 img {
   width: 8rem;
@@ -80,12 +69,14 @@ ul {
   list-style: none;
 }
 
-a {
-  color: var(--text-color);
+li a {
   text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
-a:hover {
+li a:hover {
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
   transition: 0.5s;
@@ -96,8 +87,7 @@ a:hover {
 }
 
 .menu li {
-  margin-right: 2rem;
-  
+  margin-right: 2rem;  
 }
 
 .menu a {
@@ -196,7 +186,9 @@ a:hover {
 /*Finaliza Header*/
 
 /*descripcion de Footer P*/
-
+div.container-main{
+  max-width: 90%;
+}
 .jumbotron {
   padding: 3rem;
 }
