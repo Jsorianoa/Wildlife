@@ -9,6 +9,9 @@ const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    position: fixed;
+    left: 0;
+    top: 0;
 
     @media (max-width: 768px) {
         font-size: 1.5rem;
