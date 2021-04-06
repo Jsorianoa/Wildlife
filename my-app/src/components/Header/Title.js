@@ -25,7 +25,7 @@ function Title({open}) {
 
         <Ti open={open}>
             <h1>
-                Wildlife Management México
+                Wildlife Management México A.C.
             </h1>
         </Ti>
     )
