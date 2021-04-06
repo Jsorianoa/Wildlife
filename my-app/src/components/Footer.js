@@ -5,7 +5,7 @@ function Footer() {
     return (
 
         <div className="jumbotron" id="footerEdit">
-            <p>hola</p>
+            
             <div id="footerIcons">
                 <a href="https://www.facebook.com/wildlifemanagementmx"><i class="fab fa-facebook" ></i></a>
                 <a href="/"><i class="fab fa-twitter"></i></a>
