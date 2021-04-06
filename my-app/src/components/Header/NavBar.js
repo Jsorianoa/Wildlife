@@ -33,8 +33,7 @@ const Nav = styled.nav`
         font-size:1.1rem;
     }
   }
-  `
-    
+  `    
 
 function NavBar ({ open }) {
     return (        
