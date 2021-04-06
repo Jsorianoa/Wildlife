@@ -8,9 +8,9 @@ function Main () {
                 <h3>Title description, Dec 7, 2017</h3>
                 <div className="fakeimg">Fake Image</div>
                 <p>Some text..</p>
-                <p>
-                Sunt 
-                </p>
+               
+
+               
             </div>
             <br></br>
             <div id="nosotros">
