@@ -1,17 +1,20 @@
 import React from 'react'
-import Wildlife from "../../img/Wildlife.png";
+import Escudo from "../../img/EscudoWild.png";
 
 import styled from "styled-components";
 
 const Nav = styled.nav` 
-    width: 90%; 
+    width: 100%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
     position: fixed;
     left: 0;
     top: 0;
+    background-color: #7ca375;
 
     @media (max-width: 768px) {
         font-size: 1.5rem;
@@ -39,7 +42,7 @@ function NavBar ({ open }) {
     return (        
         <Nav open={open}>           
             <div className="logo">
-                <a href="/" ><img src={Wildlife} alt="Wildlife" /></a>
+                <a href="/" ><img src={Escudo} alt="Escudo" /></a>
             </div>
             <ul className="menu" data-animation="diagonal">
                 <li>

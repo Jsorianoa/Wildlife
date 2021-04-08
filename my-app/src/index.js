@@ -7,6 +7,7 @@ import './styles/style.css' ;
 
 ReactDOM.render(
     <JournalApp/>,
+    
   document.getElementById('root')
 );
 
