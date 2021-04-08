@@ -21,8 +21,7 @@ const Nav = styled.nav`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
-        
+                
     ul.menu {    
         width: 100%; 
         display: flex;
@@ -36,11 +35,11 @@ const Nav = styled.nav`
         font-size:1.1rem;
     }
   }
-  `    
+  `
 
-function NavBar ({ open }) {
-    return (        
-        <Nav open={open}>           
+function NavBar({ open }) {
+    return (
+        <Nav open={open}>
             <div className="logo">
                 <a href="/" ><img src={Escudo} alt="Escudo" /></a>
             </div>
@@ -49,7 +48,7 @@ function NavBar ({ open }) {
                     <a href="#noticias">
                         Noticias
                         <span className="border border-bottom"></span>
-                        
+
                     </a>
                 </li>
 
@@ -64,10 +63,10 @@ function NavBar ({ open }) {
                         Contacto
                         <span className="border border-bottom"></span>
                     </a>
-                </li>  
-            </ul>   
+                </li>
+            </ul>
         </Nav>
-            
+
     )
 }
 export default NavBar;
