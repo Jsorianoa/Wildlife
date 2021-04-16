@@ -1,3 +1,4 @@
+
 import Wildlife from "../img/Wildlife.png";
 
 import styled from "styled-components";
@@ -7,19 +8,13 @@ const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    
- 
-    a{
-        color: white;
-    }
+
     @media (max-width: 768px) {
         font-size: 1.5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
-        
+                
     ul.menu {    
         width: 100%; 
         display: flex;
@@ -33,11 +28,12 @@ const Nav = styled.nav`
         font-size:1.1rem;
     }
   }
-  `    
+  `
 
 const NavBar = ({ open }) => {
     return (        
         <Nav open={open}>           
+
             <div className="logo">
                 <a href="/" ><img src={Wildlife} alt="Wildlife" /></a>
             </div>
@@ -46,7 +42,7 @@ const NavBar = ({ open }) => {
                     <a href="#noticias">
                         Noticias
                         <span className="border border-bottom"></span>
-                        
+
                     </a>
                 </li>
 
@@ -61,10 +57,10 @@ const NavBar = ({ open }) => {
                         Contacto
                         <span className="border border-bottom"></span>
                     </a>
-                </li>  
-            </ul>   
+                </li>
+            </ul>
         </Nav>
-            
+
     )
 }
 export default NavBar;
