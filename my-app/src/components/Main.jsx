@@ -16,7 +16,10 @@ const Main = () => {
                     <img src={wl1} alt="WL3" width="300" height="300"/>
                 </div>      
             </div>
+
             <br></br>
+
+
             <div id="noticias">
                 <h2>Noticias</h2>
                 <div className="cards">
@@ -43,7 +46,12 @@ const Main = () => {
                     </div>
                 </div>
             </div>
+
+
             <br></br>
+
+
+            
             <div id="contacto">
                 <h2>Contacto</h2>
                 <div className="info">          
