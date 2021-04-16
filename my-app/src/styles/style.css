@@ -12,37 +12,34 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font: 22px sans-serif;
   height: 100vh;
+  background-color: #EEEBDD;
 }
 
 /*Header*/
-    
 
 .header {
-  background-image: url('https://www.institutoerudite.org/wp-content/uploads/2018/02/especialista-de-aula-de-naturaleza-720x388.jpg');
-  padding: 1rem 0 3rem 0;
+  background-image: url("https://www.institutoerudite.org/wp-content/uploads/2018/02/especialista-de-aula-de-naturaleza-720x388.jpg");
+  padding: 0.1rem 0 3rem 0;
   min-height: 61rem;
   background-position: center center;
   background-size: cover;
-  
-
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .header {
     background-color: #1c3816;
     min-height: 15rem;
     background-size: cover;
     background-repeat: no-repeat;
   }
-
 }
-
-
 
 img {
   width: 7rem;
@@ -51,17 +48,17 @@ img {
   cursor: pointer;
   
 }
-img:hover {
+.logo img:hover {
   transform: scale(1.2);
   transition: 0.5s;
 }
 
 div.container-imagen {
-  max-width: 100%;
+  width: 100%;
 }
 
 div.container {
-  max-width: 100%;
+  width: 100%;
 }
 
 /* seccion para los links del navbar */
@@ -78,6 +75,7 @@ li a {
 }
 
 li a:hover {
+  text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
   transition: 0.5s;
@@ -88,13 +86,13 @@ li a:hover {
 }
 
 .menu li {
-  margin-right: 2rem;  
+  margin-right: 2rem;
 }
 
 .menu a {
   position: relative;
   display: block;
-  padding: .8rem 2rem;
+  padding: 0.8rem 2rem;
 }
 
 .menu .border {
@@ -104,24 +102,10 @@ li a:hover {
   transition: transform var(--transition-duration) ease-in-out;
 }
 
-.menu .border-top,
 .menu .border-bottom {
   width: 100%;
   height: 1px;
   transform: scaleX(0);
-}
-
-.menu .border-left,
-.menu .border-right {
-  width: 1px;
-  height: 100%;
-  transform: scaleY(0);
-}
-
-.menu .border-top,
-.menu .border-left,
-.menu .border-right {
-  top: 0;
 }
 
 .menu .border-bottom {
@@ -129,101 +113,108 @@ li a:hover {
   transform-origin: bottom right;
 }
 
-.menu .border-top {
-  transform-origin: top left;
-}
-
-.menu .border-left {
-  transform-origin: bottom left;
-}
-
-.menu .border-right {
-  left: auto;
-  right: 0;
-  transform-origin: top right;
-}
-
-.menu a:hover .border-top,
 .menu a:hover .border-bottom {
   transform: scaleX(1);
-}
-
-.menu a:hover .border-left,
-.menu a:hover .border-right {
-  transform: scaleY(1);
-}
-
-.menu a:hover .border-right {
-  transition-delay: var(--transition-delay);
-}
-
-.menu a:hover .border-bottom {
-  transition-delay: calc(var(--transition-delay) * 2);
-}
-
-.menu a:hover .border-left {
-  transition-delay: calc(var(--transition-delay) * 3);
-}
-
-.menu[data-animation="diagonal"] .border-left {
-  transform-origin: top left;
-}
-
-.menu[data-animation="diagonal"] .border-right,
-.menu[data-animation="diagonal"] .border-bottom {
-  transform-origin: bottom right;
 }
 
 .menu[data-animation="diagonal"] a:hover [class^="border"] {
   transition-delay: 0s;
 }
 
-/*Titulo*/
-
-/*Fin Titulo*/
-
-/* seccion para los links del navbar */
-
-/*Finaliza Header*/
-
-/*descripcion de Footer P*/
-div.container-main{
-  max-width: 90%;
+/* section de main */
+div.container-main {
+  width: 100%;
 }
-.jumbotron {
-  padding: 3rem;
-}
-
-#footerEdit {
-  font-family: verdana, Arial, Helvetica, sans-serif;
-
-  background-color: #1c3816;
-  color: rgb(255, 255, 255);
+.container-main #nosotros{
+  height: 100vh;
   display: flex;
   flex-direction: column;
-
-  justify-content: space-between;
-
+  justify-content: center;
   align-items: center;
 }
-
-div#footerIcons {
-  width: 30%;
-  align-items: center;
+h2{
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+}
+.imgnos{
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
 }
 
-#footerIcons i {
-  font-size: 2rem;
+.imgnos img{
+  width: 260px;
+  height: 250px;
+  margin-left: 4rem;
+  border-radius: 50%;
+}
+.noticias{
+  width: 100%;
+}
+.cards{
+  color: #053354;
+  display: flex;
+  flex-direction: column;
+}
+.card{
+  background-color: #CDCDCD;
+  height: 250px;
+  width: 50%;
+  margin-top: 2.5rem;
+  margin-left: 15rem;
+  margin-right: 5rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+.card:nth-child(2){
+  margin-left: 50rem;
+}
+.card img{
+  width: 300px;
+  height: 250px;
+  padding-left: 0;
+  position:initial;
+}
+.card .container{
+  width: 500px;
+  padding: 2rem ;
+}
+
+.container-main #contacto{
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.info{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.info p{
   margin-bottom: 1.5rem;
 }
-
-#footterCopyright {
-  font-size: 1rem;
+.info-redes{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.info-redes a i:last-child{
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  margin-right: 3rem;
+  color: #564646;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   div#footerIcons {
     width: 100%;
     align-items: center;
@@ -236,3 +227,29 @@ div#footerIcons {
     text-align: center;
   }
 }
+ */
+/* final section de main */
+
+
+/*descripcion de Footer P*/
+
+.jumbotron {
+  padding: 3rem;
+}
+
+#footerEdit {
+  font-family: verdana, Arial, Helvetica, sans-serif;
+  background-color: #1c3816;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+#footterCopyright {
+  font-size: 1rem;
+}
+
