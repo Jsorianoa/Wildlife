@@ -1,14 +1,26 @@
+import {Container,Row,Col} from 'react-bootstrap'
 
-const Gallery = ()=>{
-    return(
-        <div className="DivGalleryMain">
-            
-            <h1>Galeria</h1>
 
-            
+function Gallery(){
+  return (
+    <div className="DivGalleryMain">
+      
+      <h1 className="TitleGallery">Galeria</h1>
+      <Container>
+        <Row>
+          <Col>1 of 1</Col>
+          <Col>1 of 1</Col>
+        </Row>
 
-        </div>
-    )
-}
+        <Row>
+          <Col>1 of 1</Col>
+          <Col>1 of 1</Col>
+        </Row>
+      </Container>
+
+
+    </div>
+  );
+};
 
 export default Gallery;
