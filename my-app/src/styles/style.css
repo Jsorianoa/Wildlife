@@ -262,8 +262,12 @@ inicia CSS de la configuracon de "Galery"
 ****************************************************/
 
 
-div .DivGalleryMain{
+div.DivGalleryMain{
   background-color: #464F41;
+}
+
+h1.TitleGallery{
+  text-align:center;
 }
 
 /****************************************************
