@@ -61,10 +61,10 @@ const Main = () => {
                     <p>Dirección: San Luis Potosí 000, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX</p>
                 </div>
                 <div className="info-redes">
-                    <a href="https://www.facebook.com/wildlifemanagementmx"><i class="fab fa-facebook" ></i></a>
-                    <a href="/"><i class="fab fa-twitter"></i></a>
-                    <a href="/"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.instagram.com/wildlifemanagementmx/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/wildlifemanagementmx"><i className="fab fa-facebook" ></i></a>
+                    <a href="/"><i className="fab fa-twitter"></i></a>
+                    <a href="/"><i className="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/wildlifemanagementmx/?hl=es-la"><i className="fab fa-instagram"></i></a>
                 </div>
                 
             </div>      
