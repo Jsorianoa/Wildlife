@@ -41,7 +41,7 @@ body {
   }
 }
 
-img {
+.logo img {
   width: 8rem;
   height: 8rem;
   padding-left: 1rem;
@@ -262,37 +262,69 @@ inicia CSS de la configuracon de "Galery"
 ****************************************************/
 
 
-div.DivGalleryMain{
+.DivGalleryMain{
   background-color: #464F41;
-  height: 100%;
+  width: 100vw; 
 }
 
 h1.TitleGallery{
   text-align:center;
 }
-.container-gallery{
-  width: 70%;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+
+.galeria-texto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container-gallery div img {
+.container-gallery{
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 250px;
+  grid-gap: .8rem;
+  padding: 1.5rem;
+}
+.cont-img {
+  position: relative;
+}
+.cont-img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
-.container-gallery .m3{
-  grid-row: span 2;
+.cont-img h3{
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+}
+.cont-img:nth-child(1) {
+  grid-column: 1 / 3;
+}
+.cont-img:nth-child(3) {
+  grid-row-start: span 2;
+  grid-column-start: span 2;
+}
+.cont-img:nth-child(5) {
+  grid-column-start: span 2;
 }
 
-.container-gallery .m5{
-  grid-column: span 2;
-  grid-row: 1 / 2;
+.cont-img:nth-child(7) {
+  grid-column-start: span 2;
 }
-.container-gallery .m9{
-  grid-column: span 2;
-  grid-row: 2 / 3;
+.cont-img:nth-child(8) {
+  grid-column-start: span 2;
 }
+
+.parrafo {
+  width: 35%;
+  color: #dddddd;
+}
+
 /****************************************************
 finaliza CSS de la configuracon de "Galery"
 ****************************************************/
