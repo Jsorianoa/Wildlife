@@ -6,7 +6,7 @@ import wl4 from "./img/wl4.jpeg";
 import wl5 from "./img/wl5.JPG";
 import wl6 from "./img/wl6.jpg";
 import wl7 from "./img/wl7.jpg";
-import wlCirculo from "./img/wlCirculo.JPG";
+
 
 
 function Gallery(){
