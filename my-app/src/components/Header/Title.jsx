@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 const Ti = styled.div`
+    width: 50%;
  h1 {
-    text-align: center;
-    margin-top: 6rem;
+    text-align: start;
+    margin-top: 400px;
+    margin-left: 10rem;
     font-size: 5rem;
     font-weight: 700;
     color: #ffffff;
@@ -24,7 +26,11 @@ const Title = ({open}) => {
 
         <Ti open={open}>
             <h1>
-                Wildlife Management México A.C.
+                Wildlife 
+                <br />
+                &nbsp;&nbsp; Management 
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;México 
             </h1>
         </Ti>
     )
