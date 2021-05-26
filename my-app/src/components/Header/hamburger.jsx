@@ -12,9 +12,7 @@ const StyledHamburger = styled.div`
         right: 20px;
         display: flex;
         justify-content: space-around;
-        flex-flow: column nowrap;
-        
-        
+        flex-flow: column nowrap;       
 
         div{
             width: 2rem;

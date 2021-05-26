@@ -14,7 +14,12 @@ const Main = () => {
                     <img src={wl1} alt="WL1" width="300" height="300"/>
                     <img src={wl1} alt="WL2" width="300" height="300"/>
                     <img src={wl1} alt="WL3" width="300" height="300"/>
-                </div>      
+                    <img src={wl1} alt="WL4" width="300" height="300"/>
+                </div> 
+                <div className="texto-nosotros">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas quisquam id quam dolore, velit consectetur aliquam repellat mollitia atque consequuntur modi at eaque quidem itaque illo. Odio ut eius quaerat!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio iusto necessitatibus eaque, ad quos debitis porro eveniet, deleniti impedit quibusdam dolorum facere atque possimus quia natus eum amet aspernatur. Ex.</p>
+                </div>     
             </div>
 
             <br></br>

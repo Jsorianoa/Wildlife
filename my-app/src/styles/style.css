@@ -1,3 +1,4 @@
+
 :root {
   --text-color: #000000;
   --hr-color: #26292a;
@@ -25,7 +26,7 @@ body {
 /*Header*/
 
 .header {
-  background-image: url("https://www.institutoerudite.org/wp-content/uploads/2018/02/especialista-de-aula-de-naturaleza-720x388.jpg");
+  background-image: url("../components/img/wl8.JPG");
   padding: 0.1rem 0 3rem 0;
   min-height: 61rem;
   background-position: center center;
@@ -145,20 +146,36 @@ h2{
   margin-bottom: 3rem;
 }
 
-@media (max-width:768px){
-  .imgnos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-}
-
 .imgnos img{
   width: 260px;
   height: 250px;
   margin-left: 4rem;
   border-radius: 50%;
 }
+.texto-nosotros{
+  width: 60%;
+  text-align: center;
+}
+@media (max-width:768px){
+  .texto-nosotros{
+    width: 90%;
+  }
+  .logo a {
+    display: flex;
+    justify-content: center;
+  }
+  .imgnos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .imgnos img{
+    margin-bottom: 2rem;
+    margin-left: 0;
+  }
+}
+
 #noticias{
   width: 100%;
   
@@ -222,6 +239,10 @@ h2{
   .card:nth-child(2){
     margin-left: 0;
   }
+  .card img{
+    width: 100%;
+    height: auto;
+  }
 }
 .container-main #contacto{
   height: 80vh;
@@ -245,27 +266,36 @@ h2{
   display: flex;
   justify-content: center;
 }
+.info-redes a{
+  display: flex;
+  justify-content: center;
+}
 .info-redes a i:last-child{
   font-size: 2rem;
   margin-bottom: 1.5rem;
   margin-right: 3rem;
-  color: #564646;
+  color: #4e3620;
 }
 
-/* @media (max-width: 768px) {
-  div#footerIcons {
+@media (max-width: 768px) {
+  .info-redes{
     width: 100%;
-    align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
-
-  #footterCopyright {
-    font-size: 0.8rem;
-    text-align: center;
+  .info-redes a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
   }
+  .info-redes a i:last-child{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  } 
 }
- */
+
 /* final section de main */
 
 
@@ -325,7 +355,7 @@ h1.TitleGallery{
   padding: 1.5rem;
 }
 .cont-img {
-  position: relative;
+  position: inherit;
 }
 .cont-img img {
   width: 100%;
@@ -364,6 +394,45 @@ h1.TitleGallery{
   color: #dddddd;
 }
 
+@media(max-width:768px){
+  .DivGalleryMain{
+    width: auto; 
+  }
+  .galeria-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container-gallery{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cont-img {
+    position: inherit;
+  }
+  .cont-img img {
+    width: 100%;
+    height: auto;
+    
+  }
+  .cont-img h3{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+  }
+  .parrafo {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}
+
 /****************************************************
 finaliza CSS de la configuracon de "Galery"
 ****************************************************/
+
+img:hover{
+  transform: scale(1.1);
+  transition: 0.7s;
+}

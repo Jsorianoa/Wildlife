@@ -3,11 +3,13 @@ import Wildlife from "../img/Wildlife.png";
 import styled from "styled-components";
 
 const Nav = styled.nav` 
+    margin-top: -5px;
     width: 100%; 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
+    
     a{
         color: white;
     }
@@ -16,7 +18,7 @@ const Nav = styled.nav`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        background-color: ${props => (props.open ? '#4e3620':'none')};
         
     ul.menu {    
         width: 100%; 
@@ -27,6 +29,7 @@ const Nav = styled.nav`
         transition: all 0.3s linear;
     }
     li{
+        width: 100%;
         text-align:center;
         font-size:1.1rem;
     }
@@ -34,12 +37,14 @@ const Nav = styled.nav`
   `    
 
 const NavBar = ({ open }) => {
-    return (        
-        <Nav open={open}>           
+    
+        if (window.screen.width < 768) 
+        return (
+            <Nav open={open} style>                        
+            <ul className="menu" data-animation="diagonal">
             <div className="logo">
                 <a href="/" ><img src={Wildlife} alt="Wildlife" /></a>
             </div>
-            <ul className="menu" data-animation="diagonal">
                 <li>
                     <a href="#noticias">
                         Noticias
@@ -62,7 +67,36 @@ const NavBar = ({ open }) => {
                 </li>  
             </ul>   
         </Nav>
+        )
+      else return (        
+        <Nav open={open}>  
+            <div className="logo">
+                <a href="/" ><img src={Wildlife} alt="Wildlife" /></a>
+            </div>            
+            <ul className="menu" data-animation="diagonal">
             
-    )
+                <li>
+                    <a href="#noticias">
+                        Noticias
+                        <span className="border border-bottom"></span>
+                        
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#nosotros">
+                        Nosotros
+                        <span className="border border-bottom"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacto">
+                        Contacto
+                        <span className="border border-bottom"></span>
+                    </a>
+                </li>  
+            </ul>   
+        </Nav>
+        )
 }
 export default NavBar;
