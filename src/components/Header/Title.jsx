@@ -13,6 +13,7 @@ const Ti = styled.div`
   }
   @media (max-width: 768px){
     h1 {
+      width: 90%;
       font-size: 2rem;
       margin-top: ${props => (props.open ? '17rem' : '6rem' )};
       transition: all 0.3s linear;
@@ -22,17 +23,22 @@ const Ti = styled.div`
 
 
 const Title = ({open}) => {
-    return (
 
-        <Ti open={open}>
+  if (window.screen.width < 768) 
+        return (
+          <Ti open={open}>
+            <h1>Wildlife Management México </h1>
+          </Ti>
+        )
+  else return (
+          <Ti open={open}>
             <h1>
                 Wildlife 
-                <br />
-                &nbsp;&nbsp; Management 
+                &nbsp;&nbsp;&nbsp;Management 
                 <br />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;México 
             </h1>
-        </Ti>
+          </Ti>
     )
 }
 

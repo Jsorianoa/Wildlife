@@ -2,7 +2,10 @@ import Wildlife from "../img/Wildlife.png";
 
 import styled from "styled-components";
 
+    
+
 const Nav = styled.nav` 
+    background-color: ${window.onscroll};
     margin-top: -5px;
     width: 100%; 
     display: flex;
@@ -34,10 +37,9 @@ const Nav = styled.nav`
         font-size:1.1rem;
     }
   }
-  `    
-
+  `     
 const NavBar = ({ open }) => {
-    
+       
         if (window.screen.width < 768) 
         return (
             <Nav open={open} style>                        
@@ -68,8 +70,19 @@ const NavBar = ({ open }) => {
             </ul>   
         </Nav>
         )
-      else return (        
-        <Nav open={open}>  
+      if(window.screen.width > 768){
+      window.onscroll = function () {  
+        var element = document.getElementById("nav");
+        if(window.scrollY>=200){
+            element.style.backgroundColor='#4e3620';
+            
+        }
+        if(window.scrollY < 200) {
+            element.style.backgroundColor='';
+        }
+      }
+      return (        
+        <Nav open={open} id="nav" className="">  
             <div className="logo">
                 <a href="/" ><img src={Wildlife} alt="Wildlife" /></a>
             </div>            
@@ -98,5 +111,6 @@ const NavBar = ({ open }) => {
             </ul>   
         </Nav>
         )
+    }
 }
 export default NavBar;

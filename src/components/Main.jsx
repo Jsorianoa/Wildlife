@@ -1,6 +1,8 @@
-import wl1 from './img/wl1.png';
-/* import WL2 from '../img/WL2.jpg';
-import WL3 from '../img/WL3.jpg'; */
+import wl0 from './img/wl0.JPG';
+import wl1 from './img/wl1Circulo.png';
+import wl2 from './img/wl2Circulo.JPG';
+import wl3 from './img/wl3.jpg';
+import wlc from './img/wlCirculo.JPG';
 
 
 
@@ -12,8 +14,8 @@ const Main = () => {
                 <h5>Title description, Sep 2, 2017</h5>
                 <div className="imgnos">
                     <img src={wl1} alt="WL1" width="300" height="300"/>
-                    <img src={wl1} alt="WL2" width="300" height="300"/>
-                    <img src={wl1} alt="WL3" width="300" height="300"/>
+                    <img src={wl2} alt="WL2" width="300" height="300"/>
+                    <img src={wlc} alt="WL3" width="300" height="300"/>
                     <img src={wl1} alt="WL4" width="300" height="300"/>
                 </div> 
                 <div className="texto-nosotros">
@@ -29,14 +31,14 @@ const Main = () => {
                 <h2>Noticias</h2>
                 <div className="cards">
                     <div className="card">
-                        <img src={wl1} alt="wl1" width="250" height="250"/>                   
+                        <img src={wl0} alt="wl1" width="100%" height="250"/>                   
                         <div className="container">
                             <h4>John Doe</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis numquam veritatis accusamus? Hic nobis earum sapiente quas esse libero quia! Quod fuga modi nisi similique iure saepe sequi veniam provident.r</p>
                         </div>
                     </div>
                     <div className="card">
-                        <img src={wl1} alt="wl1" width="250" height="250"/>                    
+                        <img src={wl3} alt="wl1" width="250" height="250"/>                    
                         <div className="container">
                             <h4>John Doe</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laudantium dolor. Sint, nobis sunt temporibus, praesentium et ducimus molestiae deserunt dolor ut, alias voluptatem illo dolores iure nesciunt. Dicta, tenetur?</p>
