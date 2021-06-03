@@ -12,7 +12,7 @@ const Nav = styled.nav`
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    
+    transition: .6s;
     a{
         color: white;
     }
@@ -21,7 +21,7 @@ const Nav = styled.nav`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: ${props => (props.open ? '#4e3620':'none')};
+        background-color: ${props => (props.open ? '#966c3b':'none')};
         
     ul.menu {    
         width: 100%; 
@@ -74,7 +74,7 @@ const NavBar = ({ open }) => {
       window.onscroll = function () {  
         var element = document.getElementById("nav");
         if(window.scrollY>=200){
-            element.style.backgroundColor='#4e3620';
+            element.style.backgroundColor='#966c3b';
             
         }
         if(window.scrollY < 200) {
