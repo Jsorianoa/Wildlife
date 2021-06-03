@@ -12,10 +12,13 @@ const Ti = styled.div`
     -webkit-text-stroke: 1px rgb(14, 23, 43);
   }
   @media (max-width: 768px){
+    width: 100%;
     h1 {
       width: 90%;
-      font-size: 2rem;
-      margin-top: ${props => (props.open ? '17rem' : '6rem' )};
+      text-align: center;
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      margin-top: ${props => (props.open ? '19rem' : '6rem' )};
       transition: all 0.3s linear;
     }
   }
@@ -30,7 +33,8 @@ const Title = ({open}) => {
             <h1>Wildlife Management México </h1>
           </Ti>
         )
-  else return (
+  if (window.screen.width > 768)
+        return (
           <Ti open={open}>
             <h1>
                 Wildlife 
@@ -39,7 +43,7 @@ const Title = ({open}) => {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;México 
             </h1>
           </Ti>
-    )
+        )
 }
 
 export default Title;
