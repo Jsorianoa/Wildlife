@@ -11,7 +11,6 @@ const Main = () => {
         <div className="container-main">    
             <div id="nosotros">
                 <h2>Nosotros</h2>
-                <h5>Title description, Sep 2, 2017</h5>
                 <div className="imgnos">
                     <img src={wl1} alt="WL1" width="300" height="300"/>
                     <img src={wl2} alt="WL2" width="300" height="300"/>
@@ -23,8 +22,6 @@ const Main = () => {
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio iusto necessitatibus eaque, ad quos debitis porro eveniet, deleniti impedit quibusdam dolorum facere atque possimus quia natus eum amet aspernatur. Ex.</p>
                 </div>     
             </div>
-
-            <br></br>
 
 
             <div id="noticias">
@@ -49,6 +46,27 @@ const Main = () => {
                         <div className="container">
                             <h4>John Doe</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis mollitia ducimus sit quos, fuga sed cum repellat sint illo voluptatibus fugiat nesciunt eum quisquam! Animi assumenda nemo est amet.</p>
+                        </div>
+                    </div>
+                    <div className="card">    
+                        <img src={wl3} alt="wl1" width="250" height="250"/>               
+                        <div className="container">
+                            <h4>John Doe</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis mollitia ducimus sit quos, fuga sed cum repellat sint illo voluptatibus fugiat nesciunt eum quisquam! Animi assumenda nemo est amet.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={wl3} alt="wl1" width="250" height="250"/>                    
+                        <div className="container">
+                            <h4>John Doe</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laudantium dolor. Sint, nobis sunt temporibus, praesentium et ducimus molestiae deserunt dolor ut, alias voluptatem illo dolores iure nesciunt. Dicta, tenetur?</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={wl3} alt="wl1" width="250" height="250"/>                    
+                        <div className="container">
+                            <h4>John Doe</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laudantium dolor. Sint, nobis sunt temporibus, praesentium et ducimus molestiae deserunt dolor ut, alias voluptatem illo dolores iure nesciunt. Dicta, tenetur?</p>
                         </div>
                     </div>
                 </div>
