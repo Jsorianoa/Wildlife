@@ -51,9 +51,6 @@ function Gallery(){
           
         </div>
   
-        <div className="parrafo">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus minus commodi excepturi nobis nemo culpa porro! Laborum, recusandae omnis eos earum necessitatibus voluptatem reprehenderit corporis, expedita aperiam iusto temporibus quas?</p>
-        </div>
       </div>
 
     </div>

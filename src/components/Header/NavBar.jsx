@@ -21,7 +21,7 @@ const Nav = styled.nav`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: ${props => (props.open ? '#966c3b':'none')};
+        background-color: ${props => (props.open ? '#EEEBDD':'none')};
         
     ul.menu {    
         width: 100%; 
@@ -48,16 +48,14 @@ const NavBar = ({ open }) => {
                 <a href="/" ><img src={Wildlife} alt="Wildlife" /></a>
             </div>
                 <li>
-                    <a href="#noticias">
-                        Noticias
-                        <span className="border border-bottom"></span>
-                        
-                    </a>
-                </li>
-
-                <li>
                     <a href="#nosotros">
                         Nosotros
+                        <span className="border border-bottom"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#noticias">
+                        Noticias
                         <span className="border border-bottom"></span>
                     </a>
                 </li>
@@ -72,13 +70,22 @@ const NavBar = ({ open }) => {
         )
       if(window.screen.width > 768){
       window.onscroll = function () {  
-        var element = document.getElementById("nav");
+        let element = document.getElementById("nav");
+        let letra1 = document.getElementById("noticias1");
+        let letra2 = document.getElementById("noticias2");
+        let letra3 = document.getElementById("noticias3");
         if(window.scrollY>=200){
-            element.style.backgroundColor='#966c3b';
+            element.style.backgroundColor='#EEEBDD';
+            letra1.style.color='#111';
+            letra2.style.color='#111';
+            letra3.style.color='#111';
             
         }
         if(window.scrollY < 200) {
             element.style.backgroundColor='';
+            letra1.style.color='#fff';
+            letra2.style.color='#fff';
+            letra3.style.color='#fff';
         }
       }
       return (        
@@ -87,23 +94,22 @@ const NavBar = ({ open }) => {
                 <a href="/" ><img src={Wildlife} alt="Wildlife" /></a>
             </div>            
             <ul className="menu" data-animation="diagonal">
-            
-                <li>
-                    <a href="#noticias">
-                        Noticias
-                        <span className="border border-bottom"></span>
-                        
-                    </a>
-                </li>
 
                 <li>
-                    <a href="#nosotros">
+                    <a href="#nosotros" id="noticias2">
                         Nosotros
                         <span className="border border-bottom"></span>
                     </a>
                 </li>
                 <li>
-                    <a href="#contacto">
+                    <a href="#noticias" id="noticias1">
+                        Noticias
+                        <span className="border border-bottom"></span>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacto" id="noticias3">
                         Contacto
                         <span className="border border-bottom"></span>
                     </a>
