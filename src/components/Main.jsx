@@ -5,6 +5,12 @@ import wl3 from './img/wl3.jpg';
 import wlc from './img/wlCirculo.JPG';
 
 
+window.onscroll = function () {
+    if(window.scrollY>=1000){
+
+    }
+}
+
 
 const Main = () => {
     return (
@@ -69,6 +75,7 @@ const Main = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laudantium dolor. Sint, nobis sunt temporibus, praesentium et ducimus molestiae deserunt dolor ut, alias voluptatem illo dolores iure nesciunt. Dicta, tenetur?</p>
                         </div>
                     </div>
+                    
                 </div>
             </div>
 
