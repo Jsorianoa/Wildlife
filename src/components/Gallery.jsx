@@ -1,5 +1,4 @@
 import wl0 from "./img/wl0.JPG";
-import wl3 from "./img/wl3.jpg";
 import wl1 from "./img/wl1.png";
 import wl2 from "./img/wl2.JPG";
 import wl4 from "./img/wl4.jpeg";
@@ -18,7 +17,7 @@ function Gallery(){
       <div className="galeria-texto">
         <div className="container-gallery">
           <div className="cont-img">
-            <img src={wl3} alt="wl1"/>
+            <img src={wl1} alt="wl1"/>
           </div>
           <div className="cont-img">
             <img  src={wl1} alt="wl2"/>

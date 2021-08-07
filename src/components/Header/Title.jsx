@@ -1,26 +1,23 @@
 import styled from "styled-components";
-
+import Wildlife from "../img/Wildlife.png";
+import letras from "../img/EscudoWild.png";
 const Ti = styled.div`
-    width: 50%;
- h1 {
-    text-align: start;
-    margin-top: 400px;
-    margin-left: 10rem;
-    font-size: 5rem;
-    font-weight: 700;
-    color: #ffffff;
-    -webkit-text-stroke: 1px rgb(14, 23, 43);
-  }
+    width: 100%;
+    z-index: 2000;
+    position: relative;
+    .logo-desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 80px;
+    }
+    .logo-desktop img {
+      max-width: 250px;
+    }
+ 
   @media (max-width: 768px){
     width: 100%;
-    h1 {
-      width: 90%;
-      text-align: center;
-      font-size: 1.5rem;
-      margin-left: 1rem;
-      margin-top: ${props => (props.open ? '19rem' : '6rem' )};
-      transition: all 0.3s linear;
-    }
+    
   }
 `
 
@@ -30,18 +27,19 @@ const Title = ({open}) => {
   if (window.screen.width < 768) 
         return (
           <Ti open={open}>
-            <h1>Wildlife Management México </h1>
+            <div className="logo-desktop">
+                <a href="/" ><img src={Wildlife} alt="Wildlife" /></a>
+                <img src={letras} alt="Wildlife"/>
+            </div> 
           </Ti>
         )
   if (window.screen.width > 768)
         return (
           <Ti open={open}>
-            <h1>
-                Wildlife 
-                &nbsp;&nbsp;&nbsp;Management 
-                <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;México 
-            </h1>
+            <div className="logo-desktop">
+                <a href="/" ><img src={Wildlife} alt="Wildlife" /></a>
+                <img src={letras} alt="Wildlife" />
+            </div> 
           </Ti>
         )
 }
