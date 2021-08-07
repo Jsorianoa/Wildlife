@@ -26,12 +26,9 @@ body {
 
 /*Header*/
 
-.header {
-  background-image: url("../components/img/wl8.JPG");
+.header { 
   padding: 0.1rem 0 3rem 0;
-  height: 100vh;
   background-position: center center;
-  background-size: cover;
 }
 
 @media (max-width: 768px) {
@@ -44,8 +41,8 @@ body {
 }
 
 .logo img {
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
   padding-left: 1rem;
   cursor: pointer;
 }
@@ -93,7 +90,7 @@ li a:hover {
 .menu a {
   position: relative;
   display: block;
-  padding: 0.8rem 2rem;
+  padding: 0.5rem 2rem;
 }
 
 .menu .border {
@@ -123,17 +120,123 @@ li a:hover {
 }
 
 /* section de main */
-div.container-main {
+.columnas-banner{
   width: 100%;
+  max-width: 2440px;
+  top: 0;
+  position: absolute;
+  z-index: 200;
+  display: flex;
+  justify-content: space-between;
 }
-.container-main #nosotros{
-  height: 100vh;
+.image-banner1,
+.image-banner2,
+.image-banner3,
+.image-banner4{
+  max-width: 25%;
+  object-fit: cover;
+  height:70vh;
+  opacity: 0.8;
+}
+.image-banner2{
+  object-position: left;
+}
+.image-banner3{
+  object-position: top;
+}
+.content-inicio {
+  width: 100%;
+  margin-top: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.content-inicio p{
+  width: 80%;
+  text-align: justify;
+}
+.container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-nosotros{
+  width: 100%;
+  max-width: 2440px;
+  top: 0;
+  position: absolute;
+  z-index: 200;
+}
+.img-nosotros {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: bottom;
+}
+.nosotros-content {
+  width: 100%;
+  margin-top: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nosotros-vm {
+  width: 80%;
+}
+.nosotros-vm h2 {
+  margin-bottom: 40px;
+}
+.nosotros-vm p {
+  text-align: justify;
+}
+.dos-columnas {
+  width: 80%;
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 100px;
+}
+.columna1,
+.columna2 {
+  width: 50%;
+}
+.columna1{
+  margin-right: 20px;
+}
+.columna1 p,
+.content-somos p {
+  text-align: justify;
+}
+.columna2 {
+  padding-left: 60px;
+}
+.columna2 ul li {
+  list-style: circle;
+  line-height: 3;
+  font-weight: bold;
+}
+.quienes-somos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-somos {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+}
 
+.content-somos {
+  width: 65%;
+}
 h2{
   width: 100%;
   text-align: center;
@@ -155,6 +258,7 @@ h2{
   height: 250px;
   margin-left: 4rem;
   border-radius: 50%;
+  object-fit: cover;
 }
 .texto-nosotros{
   width: 60%;
@@ -252,8 +356,7 @@ h2{
     height: auto;
   }
 }
-.container-main #contacto{
-  height: 80vh;
+#contacto{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -265,14 +368,25 @@ h2{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  line-height: 3;
+  margin-bottom: 10px;;
 }
 .info p{
   margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+.info p:last-of-type,
+.info p:nth-child(2){
+  font-size: 1rem;
+  white-space: nowrap;
+  color: #D49D42;
 }
 .info-redes{
-  width: 20%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
+  margin: 20px 0;
 }
 .info-redes a{
   display: flex;
@@ -280,7 +394,7 @@ h2{
   text-decoration: none;
 }
 .info-redes a i{
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #4e3620;
 }
@@ -315,18 +429,20 @@ h2{
 
 #footerEdit {
   font-family: verdana, Arial, Helvetica, sans-serif;
-  background-color: #1c3816;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 
 
 #footterCopyright {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 /****************************************************
