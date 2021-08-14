@@ -1,10 +1,14 @@
 import wl0 from './img/wl0.JPG';
 import wl1 from './img/wl1Circulo.png';
+import noticias from "./img/noticias.jpg";
 
 import Gallery from "./Gallery";
 const Noticias = () => {
     return (
         <div id="noticias">
+            <div className="banner-nosotros">
+                <img src={noticias} alt="nosotros" className="img-nosotros"/> 
+            </div>
                 <h2>Noticias</h2>
                 <div className="cards">
                     <div className="card">
