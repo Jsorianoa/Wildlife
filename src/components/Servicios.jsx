@@ -1,8 +1,12 @@
 import wl1 from './img/wl1Circulo.png';
+import serviciosBanner from "./img/servicios-banner.jpg";
 
 const Servicios = () => {
     return (
         <div id="servicios">
+            <div className="banner-nosotros">
+                <img src={serviciosBanner} alt="nosotros" className="img-nosotros"/> 
+            </div>
                 <h2>Servicios</h2>
                 <div className="imgserv">
                     <img src={wl1} alt="WL1" width="300" height="300"/>

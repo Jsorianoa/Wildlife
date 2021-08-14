@@ -1,7 +1,12 @@
 import nosotros from './img/banner-nosotros.JPG';
 import wl1 from './img/wl1Circulo.png';
-/* import wlc from './img/wlCirculo.JPG'; */
-
+import mauricio from './img/mauricio.jpg';
+import adrian from './img/adrian.jpg';
+import jorge from './img/jorge.png';
+import emmanuel from './img/emmanuel.jpg';
+import luis from './img/luis.jpg';
+import raul from './img/raul.jpeg';
+import castro from './img/jorge-castro.jpg';
 const Nosotros = () => {
     return (
         <div id="nosotros">
@@ -101,12 +106,15 @@ const Nosotros = () => {
                     
                     <div className="quienes-somos">
                         <h3>¿QUIÉNES SOMOS?</h3>
+                        <br />
+                        <br />
                         <div className="card-somos">
                            <div className="image-somos">
-                                <img src={wl1} alt="WL1" width="300" height="300"/>
+                                <img src={mauricio} alt="mauricio" width="300" height="300" style={{ objectFit: 'cover', borderRadius: '50%' }}/>
                            </div>
                            <div className="content-somos">
                                 <h4>Mauricio Sánchez López</h4>
+                                <br />
                                 <p>
                                     Ingeniero Agrónomo Zootecnista egresado de la 
                                     Universidad Autónoma de San Luis Potosí. Cuenta con 
@@ -119,15 +127,19 @@ const Nosotros = () => {
                                     y sinergia internacional de la Reserva de la Biosfera Sierra 
                                     del Abra Tanchipa.
                                 </p>
+                                <br />
                                 <span>m.sanchez@wildlifemanagementmexico.com</span>
                            </div> 
                         </div>
-                        <div className="card-somos">
+                        <br />
+                        <br />
+                        <div className="card-somos" style={{ display:'flex', flexDirection:'row-reverse', justifyContent:'space-around' }}>
                            <div className="image-somos">
-                                <img src={wl1} alt="WL1" width="300" height="300"/>
+                                <img src={adrian} alt="adrian" width="300" height="300" style={{ objectFit: 'cover', borderRadius: '50%' }}/>
                            </div>
                            <div className="content-somos">
                                 <h4>Adrián Silva-Caballero</h4>
+                                <br />
                                 <p>
                                     Médico Veterinario Zootecnista graduado de la 
                                     Universidad Autónoma del Estado de México. Realizó 
@@ -144,15 +156,19 @@ const Nosotros = () => {
                                     participado como ponente en diversos congresos y 
                                     reuniones, tanto nacionales como internacionales.
                                 </p>
+                                <br />
                                 <span>a.caballero@wildlifemanagementmexico.com</span>
                            </div> 
                         </div>
+                        <br />
+                        <br />
                         <div className="card-somos">
                            <div className="image-somos">
-                                <img src={wl1} alt="WL1" width="300" height="300"/>
+                                <img src={wl1} alt="WL1" width="300" height="300" style={{ objectFit: 'cover', borderRadius: '50%' }}/>
                            </div>
                            <div className="content-somos">
                                 <h4>Rodrigo A. Sánchez López</h4>
+                                <br />
                                 <p>
                                     Ingeniero Agrónomo Zootecnista egresado de la 
                                     Universidad Autónoma de San Luis Potosí. Maestro en 
@@ -169,12 +185,15 @@ const Nosotros = () => {
                                 </p>
                            </div> 
                         </div>
-                        <div className="card-somos">
+                        <br />
+                        <br />
+                        <div className="card-somos" style={{ display:'flex', flexDirection:'row-reverse', justifyContent:'space-around' }}>
                            <div className="image-somos">
-                                <img src={wl1} alt="WL1" width="300" height="300"/>
+                                <img src={jorge} alt="WL1" width="300" height="300" style={{ objectFit: 'cover', borderRadius: '50%' }}/>
                            </div>
                            <div className="content-somos">
                                 <h4>Jorge Sánchez Ortega</h4>
+                                <br />
                                 <p>
                                     Médico Veterinario Zootecnista por la Universidad 
                                     Autónoma de Zacatecas. Obtuvo su maestría en Ciencias 
@@ -192,18 +211,22 @@ const Nosotros = () => {
                                     reproducción caprina, siendo Director del Centro de 
                                     Selección Caprina del Gobierno del Estado de San Luis 
                                     Potosí en varios períodos. 
-    
                                 </p>
                                 <span></span>
                            </div> 
                         </div>
+                        <br />
+                        <br />
                         <h3>Aliados</h3>
+                        <br />
+                        <br />
                         <div className="card-somos">
                            <div className="image-somos">
-                                <img src={wl1} alt="WL1" width="300" height="300"/>
+                                <img src={emmanuel} alt="emmanuel" width="300" height="300" style={{ objectFit: 'cover', borderRadius: '50%' }}/>
                            </div>
                            <div className="content-somos">
                                 <h4>Emmanuel Pineda-Pérez</h4>
+                                <br />
                                 <p>
                                     Ingeniero en Recursos Forestales egresado de la 
                                     Universidad Autónoma Chapingo. Maestro en Ciencias 
@@ -217,12 +240,15 @@ const Nosotros = () => {
                                 </p>
                            </div> 
                         </div>
-                        <div className="card-somos">
+                        <br />
+                        <br />
+                        <div className="card-somos" style={{ display:'flex', flexDirection:'row-reverse', justifyContent:'space-around' }}>
                            <div className="image-somos">
-                                <img src={wl1} alt="WL1" width="300" height="300"/>
+                                <img src={luis} alt="luis" width="300" height="300" style={{ objectFit: 'cover', borderRadius: '50%' }}/>
                            </div>
                            <div className="content-somos">
                                 <h4>Luis E. Martínez Hernández</h4>
+                                <br />
                                 <p>
                                 Experto en Cartografía y Sistemas de Información 
                                 Geográfica. Amplia experiencia como fotógrafo de vida 
@@ -232,28 +258,37 @@ const Nosotros = () => {
                                 <span></span>
                            </div> 
                         </div>
+                        <br />
+                        <br />
                         <div className="card-somos">
                            <div className="image-somos">
-                                <img src={wl1} alt="WL1" width="300" height="300"/>
+                                <img src={raul} alt="raul" width="300" height="300" style={{ objectFit: 'cover', borderRadius: '50%' }}/>
                            </div>
                            <div className="content-somos">
                                 <h4>Raúl Castro Urbiola</h4>
+                                <br />
                                 <p>
                                     Fotógrafo de vida silvestre con amplia experiencia en
                                     macrofotografía y paisajismo. Su trabajo ha sido 
                                     publicado en revistas como National Geographic, Muy 
                                     Interesante, entre otras. 
                                 </p>
-                                <span>@raulcastrou</span>
-                                <span>@raulcastrou</span>
+                                <br />
+                                <span style={{ fontWeight: '600' }}><i class="fab fa-facebook-square"></i> @raulcastrou</span>
+                                <br />
+                                <br />
+                                <span style={{ fontWeight: '600' }}><i class="fab fa-instagram"></i> @raulcastrou</span>
                            </div> 
                         </div>
-                        <div className="card-somos">
+                        <br />
+                        <br />
+                        <div className="card-somos" style={{ display:'flex', flexDirection:'row-reverse', justifyContent:'space-around' }}>
                            <div className="image-somos">
-                                <img src={wl1} alt="WL1" width="300" height="300"/>
+                                <img src={castro} alt="castro" width="300" height="300" style={{ objectFit: 'cover', borderRadius: '50%' }}/>
                            </div>
                            <div className="content-somos">
                                 <h4>Jorge Castro Urbiola</h4>
+                                <br />
                                 <p>
                                     Fotógrafo de vida silvestre con amplia experiencia en la 
                                     fotografía de flora y fauna, paisajismo y fotografía con 
@@ -261,8 +296,11 @@ const Nosotros = () => {
                                     National Geographic, Muy Interesante, así como algunos 
                                     libros especializados. 
                                 </p>
-                                <span>@thesantogrial</span>
-                                <span>@thesantogrial</span>
+                                <br />
+                                <span style={{ fontWeight: '600' }}><i class="fab fa-facebook-square"></i> @thesantogrial</span>
+                                <br />
+                                <br />
+                                <span style={{ fontWeight: '600' }}><i class="fab fa-instagram"></i> @thesantogrial</span>
                            </div> 
                         </div>
                     </div>
