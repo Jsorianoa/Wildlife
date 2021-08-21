@@ -16,7 +16,7 @@ const Nosotros = () => {
             </div>
             <div className="nosotros-content">
                     <div className="nosotros-vm">
-                        <h2>Nosotros</h2>
+                        <h2>NOSOTROS</h2>
                         <p>
                             Wildlife Management Mexico (WMM), es una organización no gubernamental 
                             (ONG) fundada en 2018 como resultado de la inquietud de un Ingeniero Agrónomo 

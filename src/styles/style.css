@@ -15,15 +15,17 @@ html {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+  
 }
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font: 22px sans-serif;
   height: 100vh;
   background-color: #EEEBDD;
 }
 
-
+a,p,div,h1,h2,h3,h4,h5,span, ul,li {
+  font-family: 'Lato', sans-serif;
+}
 /*Header*/
 
 .header { 
@@ -176,13 +178,18 @@ li a:hover {
   position: absolute;
   z-index: 200;
 }
-.img-nosotros {
+.img-nosotros,
+.img-servicios {
   width: 100%;
   height: 70vh;
   object-fit: cover;
   object-position: bottom;
+  opacity: 0.8;
 }
-.nosotros-content {
+
+.nosotros-content,
+.servicios-content,
+.noticias-content {
   width: 100%;
   margin-top: 40vh;
   display: flex;
@@ -266,6 +273,18 @@ h2{
   width: 60%;
   text-align: center;
 }
+.servicios-content h2 {
+  margin-bottom: 30px;
+}
+.card-servicio {
+  width: 80%;
+  margin: 20px 0;
+}
+.list-servicios {
+  max-width: 50%;
+  list-style-type: circle;
+  text-align:justify;
+}
 @media (max-width:768px){
   .texto-nosotros{
     width: 90%;
@@ -308,9 +327,8 @@ h2{
   }
 }
 .card{
-  background-color: #CDCDCD;
   height: auto;
-  width: 30%;
+  width: 450px;
   margin-top: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -324,13 +342,16 @@ h2{
 }
 .card .container{
   width: 95%;
-  height: auto;
-  padding: 2rem;
+  margin: 2rem 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
 }
-
+.card .container h3{
+  margin-bottom: 40px;
+  text-align: center !important;
+}
 @media (max-width:768px){
   .cards{
     width: 100%;
@@ -381,7 +402,6 @@ h2{
 .info p:last-of-type,
 .info p:nth-child(2){
   font-size: 1rem;
-  white-space: nowrap;
   color: #D49D42;
 }
 .info-redes{
@@ -400,7 +420,14 @@ h2{
   margin-bottom: 1.5rem;
   color: #4e3620;
 }
-
+@media screen and (min-width:768px){
+  .info p:last-of-type,
+  .info p:nth-child(2){
+  
+  white-space: nowrap;
+  
+}
+}
 @media (max-width: 768px) {
   .info-redes{
     width: 100%;
@@ -418,6 +445,7 @@ h2{
     margin-bottom: 1.5rem;
     margin-right: 0;
   } 
+  
 }
 
 /* final section de main */
@@ -445,6 +473,7 @@ h2{
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 /****************************************************
