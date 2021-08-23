@@ -1,10 +1,30 @@
 import Wildlife from "../img/Wildlife.png";
 import styled from "styled-components";
+import Title from './Title';
+   
 
-    
+
+    window.onscroll = function () {  
+        if(window.scrollY>=200 ){
+            /* element.style.backgroundColor='rgba(255, 255, 255, 0.7)';
+            letra1.style.color='#111';
+            letra2.style.color='#111';
+            letra3.style.color='#111'; */
+            return 'rgba(255, 255, 255, 0.7); '
+            
+        }
+        if(window.scrollY < 200 ) {
+            /* element.style.backgroundColor='';
+            letra1.style.color='#fff';
+            letra2.style.color='#fff';
+            letra3.style.color='#fff'; */
+            return 'none'
+        }
+      }
+  
 
 const Nav = styled.nav` 
-    background-color: ${window.onscroll};
+    background: ${window.onscroll};
     margin-top: -5px;
     width: 100%; 
     display: flex;
@@ -51,11 +71,12 @@ const Nav = styled.nav`
         color: #000;
     }
   }
-  `     
+  `  
+  
+ 
 const NavBar = ({ open }) => {
        
         if (window.screen.width < 768) {
-        console.log("Hola")
         return (
             <Nav open={open} >                        
             <ul className="menu" data-animation="diagonal">
@@ -85,27 +106,10 @@ const NavBar = ({ open }) => {
         )
     }
         if(window.screen.width > 768) {
-        window.onscroll = function () {  
-        let element = document.getElementById("nav");
-        let letra1 = document.getElementById("noticias1");
-        let letra2 = document.getElementById("noticias2");
-        let letra3 = document.getElementById("noticias3");
-        if(window.scrollY>=200 ){
-            element.style.backgroundColor='rgba(255, 255, 255, 0.6)';
-            letra1.style.color='#111';
-            letra2.style.color='#111';
-            letra3.style.color='#111';
-            
-        }
-        if(window.scrollY < 200 ) {
-            element.style.backgroundColor='';
-            letra1.style.color='#fff';
-            letra2.style.color='#fff';
-            letra3.style.color='#fff';
-        }
-      }
+        
       return (        
-        <Nav open={open} id="nav" >             
+        <Nav open={open} id="nav" >      
+            <Title open={open}/>       
             <ul className="menu" data-animation="diagonal">
 
                 <li>

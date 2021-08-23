@@ -10,10 +10,9 @@ const Ti = styled.div`
         flex-direction: column;
         justify-content: center;
         margin-left: 80px;
+        max-width: 100px;
     }
-    .logo-desktop img {
-      max-width: 250px;
-    }
+    
  
   @media (max-width: 768px){
     width: 100%;
@@ -28,8 +27,10 @@ const Title = ({open}) => {
         return (
           <Ti open={open}>
             <div className="logo-desktop">
-                <a href="/" ><img src={Wildlife} alt="Wildlife" /></a>
-                <img src={letras} alt="Wildlife"/>
+                <a href="/" >
+                  <img src={Wildlife} alt="Wildlife" style={{position:'sticky'}}/>
+                  <img src={letras} alt="Wildlife"/>
+                </a>               
             </div> 
           </Ti>
         )

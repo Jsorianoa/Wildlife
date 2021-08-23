@@ -1,7 +1,7 @@
 import nosotros from './img/banner-nosotros.JPG';
-import wl1 from './img/wl1Circulo.png';
 import mauricio from './img/mauricio.jpg';
 import adrian from './img/adrian.jpg';
+import rodrigo from './img/rodrigo-s.png';
 import jorge from './img/jorge.png';
 import emmanuel from './img/emmanuel.jpg';
 import luis from './img/luis.jpg';
@@ -128,7 +128,8 @@ const Nosotros = () => {
                                     del Abra Tanchipa.
                                 </p>
                                 <br />
-                                <span>m.sanchez@wildlifemanagementmexico.com</span>
+                                <a href="mailto:m.sanchez@wildlifemanagementmexico.com">m.sanchez@wildlifemanagementmexico.com</a>
+                                
                            </div> 
                         </div>
                         <br />
@@ -157,14 +158,14 @@ const Nosotros = () => {
                                     reuniones, tanto nacionales como internacionales.
                                 </p>
                                 <br />
-                                <span>a.caballero@wildlifemanagementmexico.com</span>
+                                <a href="mailto:a.caballero@wildlifemanagementmexico.com">a.caballero@wildlifemanagementmexico.com</a>
                            </div> 
                         </div>
                         <br />
                         <br />
                         <div className="card-somos">
                            <div className="image-somos">
-                                <img src={wl1} alt="WL1" width="300" height="300" style={{ objectFit: 'cover', borderRadius: '50%' }}/>
+                                <img src={rodrigo} alt="WL1" width="300" height="300" style={{ objectFit: 'cover', borderRadius: '50%' }}/>
                            </div>
                            <div className="content-somos">
                                 <h4>Rodrigo A. Sánchez López</h4>

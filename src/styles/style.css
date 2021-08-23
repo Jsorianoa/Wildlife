@@ -41,7 +41,18 @@ a,p,div,h1,h2,h3,h4,h5,span, ul,li {
     background-repeat: no-repeat;
   }
 }
-
+.logo-desktop a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-desktop img:nth-child(1){
+  max-width: 70px;
+}
+.logo-desktop img:nth-child(2){
+  max-width: 100px;
+  margin-top: -5px;
+}
 .logo img {
   width: 6rem;
   height: 6rem;
