@@ -2,7 +2,7 @@
 import Lottie from "react-lottie"
 import treeInicio from "../assets/lottie/tree.json"
 import falco from './img/falco.png';
-import flor from './img/flor.jpg';
+import flor from './img/flor.JPG';
 import wl8 from './img/wl8.JPG';
 import wlc from './img/wlCirculo.JPG';
 import home1 from './img/home1.JPG';
@@ -10,20 +10,16 @@ import home2 from './img/home2.png';
 import home3 from './img/home3.jpg';
 import home4 from './img/home4.JPG';
 
-window.onscroll = function () {
-    if(window.scrollY >= 1000){
 
-    }
-}
 
 const defaultOptions = {
     loop: true,
     autoplay: true
   }
 const Main = () => {
-    
-    if ('DOMContentLoaded') return  (
-        <div className="container-main">
+
+    if ('DOMContentLoaded') {return  (
+        <div className="container-main" >
             <div className="columnas-banner">
                 <img src={flor} alt="tucan" className="image-banner4"/> 
                 <img src={wlc} alt="WLc" className="image-banner2"/>
@@ -60,8 +56,8 @@ const Main = () => {
             <br></br>
       
       </div>
-    )
-    else return <Lottie options={{animationData: treeInicio, ...defaultOptions}}/>
+    )}
+    else {return <Lottie options={{animationData: treeInicio, ...defaultOptions}}/>}
 }
 
 export default Main;

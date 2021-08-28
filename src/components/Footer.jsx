@@ -14,17 +14,17 @@ const Footer = () => {
                 </div>
                 <div className="info-redes">
                 
-                    <a href="https://www.facebook.com/wildlifemanagementmx" target="_blank"><i className="fab fa-facebook" ></i></a>
-                    <a href="https://twitter.com/MxWildlife?s=20" target="_blank"><i className="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/wildlifemanagementmx" target="_blank" rel="noreferrer"><i className="fab fa-facebook" ></i></a>
+                    <a href="https://twitter.com/MxWildlife?s=20" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a>
                     <a href="mailto:contacto@wildlifemanagementmexico.com"><i className="fas fa-envelope"></i></a>
-                    <a href="https://www.instagram.com/wildlifemanagementmx/?hl=es-la" target="_blank" ><i className="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/wildlifemanagementmx/?hl=es-la" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
                 </div>
                 
             </div>
             
             <div id="footterCopyright">
 
-                <p>© Copyright - A quien corresponfa por "nombre de la empresa"</p>
+                <p>© Copyright 2021 – Wildlife Management Mexico A.C.</p>
             </div>
 
         </div>

@@ -11,7 +11,7 @@ const Noticias = () => {
                 <img src={noticias} alt="nosotros" className="img-nosotros"/> 
             </div>
                 <div className="noticias-content">
-                    <h2>Noticias</h2>
+                    <h2>NOTICIAS</h2>
                     <div className="cards">
                         <div className="card">
                             <img src={noticias1} alt="noticias" style={{ width:'100%',height:'455px',objectFit: "cover", borderRadius: "20px" }}/>                   
@@ -36,7 +36,7 @@ const Noticias = () => {
                         </div>
                         
                     </div>
-                    <Gallery />
+                    
                 </div>
             </div>
             
