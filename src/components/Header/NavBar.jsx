@@ -7,7 +7,7 @@ const Nav = styled.nav`
   margin-top: -5px;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   position: fixed;
   z-index: 3000;
@@ -23,12 +23,13 @@ const Nav = styled.nav`
     padding-right: 80px;
   }
   @media (max-width: 768px) {
+    width: 100%;
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: ${(props) =>
-      props.open ? "rgba(255, 255, 255, 0.5)" : "none"};
+      props.open ? "rgba(255, 255, 255, 0.8)" : "none"};
     .logo {
       display: block;
     }
@@ -41,21 +42,23 @@ const Nav = styled.nav`
         props.open ? "translateY(0);" : "translateY(-100%)"};
       opacity: ${(props) => (props.open ? 1 : 0)};
       transition: all 0.3s linear;
+      padding-right: 0;
+      padding-left: 20px;
     }
     li {
       width: 100%;
-      text-align: center;
       font-size: 1.1rem;
     }
     li a {
       color: #000;
+      text-align: center;
     }
   }
-`;
+`
 
 const NavBar = ({ open }) => {
   const [background, setBackground] = useState("transparent");
-  const [color, setColor] = useState("#FFFFFF");
+  const [color, setColor] = useState("#000000");
   const divRef = useRef();
   useEffect(() => {
     const handleScroll = () => {
@@ -66,7 +69,6 @@ const NavBar = ({ open }) => {
         setColor("#000000");
       } else {
         setBackground("transparent");
-        setColor("#FFFFFF");
       }
     };
     window.addEventListener("scroll", handleScroll);
