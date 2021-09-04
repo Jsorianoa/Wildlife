@@ -3,6 +3,7 @@ import servicios2 from "./img/servicios-2.jpg";
 import servicios3 from "./img/servicios-3.JPG";
 import servicios4 from "./img/servicios-4.jpg";
 import servicios5 from "./img/servicios-5.JPG";
+import servicios6 from "./img/servicios-6.JPG";
 import serviciosBanner from "./img/servicios-banner.jpg";
 
 const Servicios = () => {
@@ -21,6 +22,7 @@ const Servicios = () => {
               justifyContent: "space-between",
               alignItems: "center",
             }}
+            className="body-servicios"
           >
             <ul className="list-servicios">
               <li>Captura, traslado y liberación de fauna silvestre</li>
@@ -49,6 +51,7 @@ const Servicios = () => {
               justifyContent: "space-between",
               alignItems: "center",
             }}
+            className="body-servicios"
           >
             <ul className="list-servicios">
               <li>
@@ -80,6 +83,7 @@ const Servicios = () => {
               justifyContent: "space-between",
               alignItems: "center",
             }}
+            className="body-servicios"
           >
             <ul className="list-servicios">
               <li>
@@ -109,6 +113,7 @@ const Servicios = () => {
               justifyContent: "space-between",
               alignItems: "center",
             }}
+            className="body-servicios"
           >
             <ul className="list-servicios">
               <li>Monitoreo y evaluación de poblaciones de fauna silvestre</li>
@@ -132,6 +137,7 @@ const Servicios = () => {
               justifyContent: "space-between",
               alignItems: "center",
             }}
+            className="body-servicios"
           >
             <ul className="list-servicios">
               <li>
@@ -170,6 +176,7 @@ const Servicios = () => {
               justifyContent: "space-between",
               alignItems: "center",
             }}
+            className="body-servicios"
           >
             <ul className="list-servicios">
               <li>Senderismo</li>
@@ -179,7 +186,7 @@ const Servicios = () => {
               <li>Monitoreo biológico in situ</li>
             </ul>
             <img
-              src={servicios5}
+              src={servicios6}
               alt="servicios"
               width="400"
               height="300"

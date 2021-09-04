@@ -9,7 +9,7 @@ const StyledHamburger = styled.div`
         height: 2rem;
         position: fixed;
         top: 15px;
-        right: 20px;
+        margin-left: 10px;
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;       

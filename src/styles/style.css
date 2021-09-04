@@ -56,7 +56,8 @@ a,p,div,h1,h2,h3,h4,h5,span, ul,li {
 .logo img {
   width: 6rem;
   height: 6rem;
-  padding-left: 1rem;
+  padding-right: .5rem;
+  margin-right: .5rem;
   cursor: pointer;
 }
 .logo img:hover {
@@ -149,6 +150,7 @@ li a:hover {
   max-width: 25%;
   object-fit: cover;
   height:80vh;
+  margin-top: 113px;
 }
 .image-banner2{
   object-position: left;
@@ -158,7 +160,7 @@ li a:hover {
 }
 .content-inicio {
   width: 100%;
-  margin-top: 40vh;
+  margin-top: 45vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,13 +198,14 @@ li a:hover {
   height: 80vh;
   object-fit: cover;
   object-position: bottom;
+  margin-top: 113px;
 }
 
 .nosotros-content,
 .servicios-content,
 .noticias-content {
   width: 100%;
-  margin-top: 40vh;
+  margin-top: 45vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -297,6 +300,14 @@ h2{
   text-align:justify;
 }
 @media (max-width:768px){
+  .image-banner1,
+  .image-banner2,
+  .image-banner4{
+    display:none;
+  }
+  .image-banner3{
+    max-width: 100%;
+  }
   .texto-nosotros{
     width: 90%;
   }
@@ -314,6 +325,68 @@ h2{
     margin-bottom: 2rem;
     margin-left: 0;
   }
+  .dos-columnas {
+    display: flex;
+    flex-direction: column;
+  }
+  .columna1,
+  .columna2 {
+    width: 90%;
+  }
+  .card-somos{
+    display: flex;
+    flex-direction: column !important;
+  }
+  .content-somos {
+    width: 90%;
+  }
+  .content-somos a{
+    font-size: 16px;
+  }
+  .card-servicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-servicio h3{
+    margin-bottom: 15px;
+  }
+  .body-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .body-servicios img {
+    margin: 15px 0 25px 0;
+  }
+  .list-servicios {
+    max-width: 80% !important;
+  }
+  .noticias-content .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-noticias {
+    width: 95%;
+  }
+  .card-noticias .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-noticias h3 {
+    margin: 20px 0;
+  }
+  .card-noticias p {
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 40px;
+  }
 }
 
 #noticias{
@@ -326,10 +399,9 @@ h2{
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
-.card{
+.card-noticias{
   height: auto;
   width: 450px;
   margin-top: 2.5rem;
@@ -338,7 +410,9 @@ h2{
   justify-content: space-between;
   border-radius: 15px;
 }
-
+.card-noticias p {
+  text-align: justify;
+}
 .card img{
   width: 100%;
   height: auto; 
@@ -377,10 +451,16 @@ h2{
   .card:nth-child(2){
     margin-left: 0;
   }
-  .card img{
+  .card-noticias img{
     width: 100%;
     height: auto;
   }
+  .card-noticias h3 {
+    width: 400px;
+  }
+  /* .card-noticias img {
+    max-width: 400px;
+  } */
 }
 #contacto{
   display: flex;
@@ -397,6 +477,7 @@ h2{
   line-height: 3;
   margin-bottom: 10px;;
 }
+
 .info p{
   margin-bottom: 1.5rem;
   text-align: center;
@@ -448,7 +529,9 @@ h2{
     margin-bottom: 1.5rem;
     margin-right: 0;
   } 
-  
+  .info a {
+    font-size: 20px;
+  }
 }
 
 /* final section de main */
@@ -490,6 +573,7 @@ inicia CSS de la configuracon de "Galery"
 .DivGalleryMain{
   background-color: #464F41;
   width: 100%; 
+  margin-top: 61px;
 }
 
 h1.TitleGallery{
@@ -555,9 +639,7 @@ h1.TitleGallery{
 }
 
 @media(max-width:768px){
-  .DivGalleryMain{
-    width: auto; 
-  }
+  
   .galeria-texto {
     display: flex;
     flex-direction: column;
